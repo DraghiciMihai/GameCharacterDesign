@@ -3,10 +3,6 @@ public class Hero extends Character implements Actions {
         super(health, attackPower);
     }
 
-    public void decressLife(int value) {
-        super.health-=value;
-    }
-
     public void attack(Character character) {
         character.decressLife(this.attackPower);
     }
